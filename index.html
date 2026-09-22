@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema para loteamentos, prédios e aluguéis — SKL Soluções Digitais</title>
+<meta name="description" content="Sistema de gestão para loteamentos, prédios e aluguéis: mapa real, estoque ao vivo, reservas com prazo automático e integração com CRM via API.">
+<meta name="theme-color" content="#04152a">
+<link rel="canonical" href="https://sklgeosolucoes.com.br/">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="SKL Soluções Digitais">
+<meta property="og:title" content="Sistema para loteamentos, prédios e aluguéis — SKL Soluções Digitais">
+<meta property="og:description" content="Do mapa à reserva, em um único ambiente: mapa real, estoque ao vivo, reservas com prazo automático e integração com CRM via API.">
+<meta property="og:url" content="https://sklgeosolucoes.com.br/">
+<meta property="og:image" content="https://sklgeosolucoes.com.br/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.className += ' js';</script>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SKL Soluções Digitais",
+  "description": "Plataforma de operação comercial e gestão visual de empreendimentos imobiliários.",
+  "url": "https://sklgeosolucoes.com.br/",
+  "email": "contato@sklgeosolucoes.com.br",
+  "telephone": "+55 66 99612-1567",
+  "areaServed": "BR",
+  "image": "https://sklgeosolucoes.com.br/assets/og-image.jpg"
+}
+</script>
+<!--FAQ-LD--><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Preciso instalar algo ou ter um servidor?","acceptedAnswer":{"@type":"Answer","text":"Não há servidor local: a plataforma roda na nuvem e a equipe só faz login. A Central de Vendas tem aplicativo para computador (Windows) e para tablet e celular Android. O corretor usa por link, no iPhone, no Android e no computador; no iPhone pode ser instalado na tela inicial como aplicativo web (não é aplicativo de loja)."}},{"@type":"Question","name":"Preciso abandonar o CRM que já uso?","acceptedAnswer":{"@type":"Answer","text":"Não. Onde existe integração, o CRM continua sendo a fonte oficial de gestão, e a SKL entrega esses dados como uma ferramenta visual e operacional. Quem não usa CRM opera normalmente com a base própria da plataforma."}},{"@type":"Question","name":"Funciona para loteamento, prédio e aluguel?","acceptedAnswer":{"@type":"Answer","text":"Sim, para os três. Loteamentos com quadras, lotes, medidas e memorial; prédios com torres, andares, plantas e acabamentos; e a Central de Aluguéis para imóveis de locação. Vários empreendimentos podem ficar no mesmo login, cada um isolado do outro."}},{"@type":"Question","name":"Como funciona o controle de reservas?","acceptedAnswer":{"@type":"Answer","text":"O corretor faz um pedido por imóvel; a Central tem 20 minutos para responder; aprovada, a reserva dura 2 horas para concluir a venda; se não concluir, o imóvel volta a Disponível e aquele corretor fica 24 horas sem reservá-lo. Esses tempos são o padrão sugerido e podem ser ajustados por empreendimento."}},{"@type":"Question","name":"Como ficam a segurança e a LGPD?","acceptedAnswer":{"@type":"Answer","text":"Cada pessoa tem login individual e permissões aplicadas no próprio banco de dados, e toda alteração fica na auditoria (quem, quando e o quê). Os recursos são projetados para apoiar o tratamento de dados conforme as políticas da empresa e a LGPD."}},{"@type":"Question","name":"Como é a contratação e a implantação?","acceptedAnswer":{"@type":"Answer","text":"Começa com uma conversa e uma demonstração ao vivo. Depois vem a proposta, a configuração do ambiente, a carga dos dados, o treinamento da Central e dos corretores e o acompanhamento nos primeiros dias em operação."}},{"@type":"Question","name":"Posso ver funcionando antes de decidir?","acceptedAnswer":{"@type":"Answer","text":"Sim. Agendamos uma demonstração ao vivo, com o aplicativo em funcionamento, e você recebe uma proposta sob medida para a sua operação."}}]}</script><!--/FAQ-LD-->
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header" id="topo">
+  <div class="wrap nav">
+    <a class="brand" href="#topo" aria-label="SKL Soluções Digitais — início">
+      <img src="assets/logo.webp" width="42" height="42" alt="">
+      <span>SKL<small>Soluções Digitais</small></span>
+    </a>
+    <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#solucao">Solução</a>
+      <a href="#estoque">Mapa e estoque</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#integracao">Integração</a>
+      <a href="#implantacao">Implantação</a>
+      <a href="#faq">Dúvidas</a>
+      <a class="btn btn--primary btn--sm" href="#contato">Agendar demonstração</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Sistema de gestão para empreendimentos imobiliários</span>
+      <h1>Do mapa à reserva, <em>em um único ambiente.</em></h1>
+      <p class="sub">Plataforma de operação comercial e gestão visual de empreendimentos — sozinha ou integrada ao CRM que a empresa já usa. Acesso por iPhone, Android e computador.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="https://wa.me/5566996121567?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20da%20plataforma%20SKL." target="_blank" rel="noopener">Agendar demonstração</a>
+        <a class="btn btn--ghost" href="#solucao">Ver como funciona</a>
+      </div>
+      <div class="chips" aria-label="Destaques">
+        <span class="chip">Mapa e localização real</span>
+        <span class="chip">Controle de reservas</span>
+        <span class="chip">Integração com CRM via API</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <figure class="tablet device" style="margin:0">
+        <img src="assets/central-visao.webp" width="1100" height="807" fetchpriority="high" alt="Central de Vendas: painel com a quantidade de unidades disponíveis, reservadas, vendidas e bloqueadas">
+      </figure>
+      <figure class="phone device" style="margin:0">
+        <img src="assets/app-reserva.webp" width="640" height="830" alt="App do corretor: ficha do lote com contador regressivo de 2 horas para concluir a reserva">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="section" id="problema">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">O problema que a plataforma resolve</span>
+      <h2>Empreendimento vendido em ferramentas soltas perde tempo — e venda</h2>
+      <p class="lead">Em muitas operações, a informação do empreendimento está espalhada: o mapa em um arquivo, o preço em uma planilha, a situação no WhatsApp e o pedido de reserva por telefone. O corretor não sabe se o imóvel ainda está livre e a Central gasta o dia confirmando.</p>
+    </div>
+    <div class="grid grid--3 problem">
+      <article class="card reveal"><span class="num">01</span><h3>Um único estoque, ao vivo</h3>
+        <p class="hoje"><b>Hoje:</b> planilha, PDF e mensagem de WhatsApp com situações diferentes.</p>
+        <p class="com"><b>Com a SKL:</b> todos veem a mesma situação de cada lote ou unidade no mesmo instante.</p></article>
+      <article class="card reveal"><span class="num">02</span><h3>Reservas com prazo automático</h3>
+        <p class="hoje"><b>Hoje:</b> imóvel “preso” por reserva sem venda.</p>
+        <p class="com"><b>Com a SKL:</b> prazos que a própria plataforma aplica, iguais para todos os corretores.</p></article>
+      <article class="card reveal"><span class="num">03</span><h3>Informação técnica na mão do corretor</h3>
+        <p class="hoje"><b>Hoje:</b> o corretor liga para a Central para saber medida, valor ou onde fica.</p>
+        <p class="com"><b>Com a SKL:</b> mapa, medidas, memorial, planta e rota em uma ficha.</p></article>
+      <article class="card reveal"><span class="num">04</span><h3>Do pedido ao contrato no mesmo fluxo</h3>
+        <p class="hoje"><b>Hoje:</b> pedido, aprovação, contrato e comissão em ferramentas separadas.</p>
+        <p class="com"><b>Com a SKL:</b> um fluxo só, com histórico.</p></article>
+      <article class="card reveal"><span class="num">05</span><h3>Gestão com números</h3>
+        <p class="hoje"><b>Hoje:</b> o funil e o desempenho da equipe dependem de planilhas.</p>
+        <p class="com"><b>Com a SKL:</b> relatórios do estoque, das vendas e do tempo de resposta.</p></article>
+      <article class="card reveal"><span class="num">06</span><h3>Rastro de cada alteração</h3>
+        <p class="hoje"><b>Hoje:</b> ninguém sabe quem mudou o preço ou a situação.</p>
+        <p class="com"><b>Com a SKL:</b> auditoria com quem, quando e o quê.</p></article>
+    </div>
+    <p class="note"><b>Sem servidor local.</b> A plataforma roda na nuvem: a equipe só faz login. Atualizações chegam sem reinstalar no link do corretor.</p>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="section section--soft" id="solucao">
+  <div class="wrap">
+    <div class="head head--center">
+      <span class="eyebrow">A solução</span>
+      <h2>Uma camada operacional e visual para a equipe comercial</h2>
+      <p class="lead">A SKL une, em um só ambiente, a posição real de cada imóvel, seus dados técnicos e o processo comercial — estoque, mapa, ficha, formas de pagamento, simulação, reserva, contrato e comissão. Pode operar sozinha ou conectada ao CRM que a sua empresa já usa.</p>
+    </div>
+    <div class="grid grid--3 product">
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Central de Vendas</h3>
+        <p>Estoque, mapa, solicitações, usuários, formas de pagamento, comissões, contratos e relatórios. Aplicativo para computador (Windows) e para tablet e celular Android.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+        <h3>App do Corretor</h3>
+        <p>Mapa, ficha técnica e comercial, simulador de financiamento, pedido de reserva e comissões. Acesso por link no iPhone, no Android e no computador.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <h3>Central de Aluguéis</h3>
+        <p>Carteira de imóveis com fotos e mapa, interessados e gestão de corretores e comissões — no mesmo acesso.</p>
+      </article>
+    </div>
+    <nav class="link-cards" aria-label="Soluções por assunto">
+      <a href="sistema-para-loteamentos.html">Sistema para loteamentos<small>Mapa de lotes, medidas e memorial</small></a>
+      <a href="sistema-para-predios-e-construtoras.html">Prédios e construtoras<small>Espelho de vendas online</small></a>
+      <a href="sistema-de-alugueis-para-imobiliarias.html">Aluguéis para imobiliárias<small>Carteira de imóveis e interessados</small></a>
+      <a href="controle-de-reservas-de-lotes-e-unidades.html">Controle de reservas<small>Prazo automático e bloqueio</small></a>
+      <a href="integracao-cv-crm.html">Integração com CV CRM<small>Mapa e estoque ligados ao CRM</small></a>
+    </nav>
+    <div class="grid grid--2" style="margin-top:26px">
+      <div class="card reveal">
+        <h3>Para qualquer tipo de empreendimento</h3>
+        <ul class="checks checks--tight">
+          <li><b>Loteamentos:</b> quadras, lotes, medidas, memorial e mapa colorido por situação</li>
+          <li><b>Prédios:</b> torres, andares, tipos de planta, acabamentos, galeria e vagas de garagem</li>
+          <li><b>Aluguéis:</b> imóveis com fotos, valor, situação e interessados</li>
+          <li>Vários empreendimentos no mesmo login, cada um isolado do outro</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Seu CRM continua sendo a fonte oficial</h3>
+        <p>A empresa não precisa abandonar o sistema que já usa. A SKL transforma os dados do empreendimento em uma ferramenta visual e operacional para a Central e para o corretor.</p>
+        <p style="margin-top:14px"><a href="#integracao">Como funciona a integração →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA E ESTOQUE -->
+<section class="section" id="estoque">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Central de Vendas · mapa e estoque</span>
+      <h2>O estoque inteiro sob controle — e cada lote no mapa</h2>
+      <p class="lead">A SKL nasceu próxima da realidade de loteamentos e da organização espacial dos empreendimentos. Cada lote fica ligado à sua posição real, aos seus dados técnicos e ao processo comercial.</p>
+      <ul class="checks">
+        <li>Painel de bordo: disponíveis, reservados, vendidos e bloqueados em tempo real</li>
+        <li>Mapa interativo colorido por situação, com imagem de satélite</li>
+        <li>Lista completa com busca, filtros e edição rápida de situação, valor e cliente</li>
+        <li>Atualização em massa: altera vários lotes de uma vez</li>
+        <li>Trava de concorrência: duas pessoas não sobrescrevem a mesma alteração sem perceber</li>
+        <li>Medidas e áreas de cada lote (área, perímetro, testada e divisas) e memorial descritivo em PDF</li>
+        <li>Rota até o lote pelo Google Maps ou Waze</li>
+        <li>Planta 3D interativa, opcional, quando contratada</li>
+      </ul>
+      <p class="callout"><b>Mesma informação, ao mesmo tempo, para todos.</b> O que a Central altera aparece na hora no app de cada corretor — sem atualizar planilha e sem mandar mensagem.</p>
+    </div>
+    <div class="split-media reveal">
+      <figure class="shot shot--tablet">
+        <div class="device"><img src="assets/central-lotes.webp" width="1000" height="917" loading="lazy" decoding="async" alt="Central de Vendas: controle de lotes com mapa colorido por situação e lista com quadra, lote, área, situação e valor"></div>
+        <figcaption>Central de Vendas — mapa por situação e lista de lotes (dados de demonstração)</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PRÉDIOS -->
+<section class="section section--soft" id="predios">
+  <div class="wrap split split--rev">
+    <div>
+      <span class="eyebrow">Prédios e torres</span>
+      <h2>Da torre à unidade: planta, posição e informação comercial</h2>
+      <p class="lead">A unidade ligada à sua posição real. O cliente vê a planta, o andar e os acabamentos; o corretor apresenta e reserva sem sair da ficha.</p>
+      <ul class="checks">
+        <li>Torres, andares e mapa do prédio com a situação de cada unidade</li>
+        <li>Tipos de planta, área privativa, quartos, suítes, banheiros e vagas</li>
+        <li>Posição solar (orientação) de cada unidade</li>
+        <li>Plantas em tela cheia, galeria de imagens e áreas comuns</li>
+        <li>Acabamentos descritos por padrão de unidade</li>
+        <li>Vagas de garagem vinculadas a cada unidade</li>
+        <li>Valor, formas de pagamento, simulação e pedido de reserva na ficha</li>
+      </ul>
+    </div>
+    <div class="split-media reveal">
+      <div class="shots">
+        <figure class="shot shot--phone"><div class="phone device"><img src="assets/app-predio.webp" width="720" height="900" loading="lazy" decoding="async" alt="App do corretor: mapa do prédio com os andares empilhados e cada unidade colorida por situação"></div><figcaption>Mapa do prédio</figcaption></figure>
+        <figure class="shot shot--phone"><div class="phone device"><img src="assets/app-unidade.webp" width="720" height="1034" loading="lazy" decoding="async" alt="App do corretor: ficha do apartamento com valor, área, quartos, vagas, planta e galeria de imagens"></div><figcaption>Ficha da unidade</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APP DO CORRETOR -->
+<section class="section" id="corretor">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">App do Corretor</span>
+      <h2>O corretor trabalha de qualquer lugar, com tudo na mão</h2>
+      <p class="lead">Consulta rápida em campo: medidas, valor, memorial e navegação até o lote, direto do celular — sem depender de ligação para a Central.</p>
+      <ul class="checks">
+        <li>Mapa com todos os imóveis coloridos por situação, com imagem de satélite</li>
+        <li>Localização por quadra e lote (ou por andar, situação e tipo, nos prédios)</li>
+        <li>Ficha comercial: área, valor, formas de pagamento, memorial em PDF, medidas técnicas e rota</li>
+        <li>Simulador de financiamento e pedido de reserva ou indicação de venda em poucos toques</li>
+        <li>Favoritos e compartilhamento da ficha com o cliente</li>
+        <li>Acompanha os próprios pedidos, vendas e comissões</li>
+      </ul>
+      <p class="callout"><b>Acesso por iPhone, Android e computador.</b> No iPhone, o sistema abre por link e pode ser instalado na tela inicial como aplicativo web (não é aplicativo de loja). No Android, funciona pelo mesmo link e também pode haver versão instalável dedicada, conforme a implantação.</p>
+    </div>
+    <div class="split-media reveal">
+      <figure class="shot shot--phone" style="margin-inline:auto;max-width:360px">
+        <div class="phone device"><img src="assets/app-ficha-lote.webp" width="640" height="732" loading="lazy" decoding="async" alt="App do corretor: ficha do lote com área, perímetro, testada, valor e botões para Google Maps, Waze, memorial e formas de pagamento"></div>
+        <figcaption>Ficha do lote no app do corretor</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section class="section section--dark" id="reservas">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Diferencial · controle de reserva</span>
+      <h2>Controle automático de tempo de reserva: sem unidades presas</h2>
+      <p class="lead">Sem regra, um corretor pode reservar lotes por tempo indeterminado — por engano ou para “guardar” imóveis na própria carteira — travando a venda para toda a equipe. O controle de tempo elimina isso sem ninguém precisar cobrar ou acompanhar.</p>
+    </div>
+    <div class="steps4">
+      <div class="step4 reveal"><span class="big">1 pedido</span><h3>Sem duplicidade</h3><p>O corretor só pode ter um pedido por imóvel. Enviou, o botão de reserva some para aquele imóvel.</p></div>
+      <div class="step4 reveal"><span class="big">20 min</span><h3>Prazo da Central</h3><p>A Central tem 20 minutos para aprovar ou recusar. Sem resposta, o pedido vence sozinho e o imóvel segue livre para todos.</p></div>
+      <div class="step4 reveal"><span class="big">2 horas</span><h3>Prazo para fechar</h3><p>Aprovada a reserva, o corretor tem 2 horas para juntar documentos e concluir, com contador regressivo na tela.</p></div>
+      <div class="step4 reveal"><span class="big">24 horas</span><h3>Bloqueio</h3><p>Não concluiu? O imóvel volta a Disponível automaticamente e aquele corretor fica 24 h sem poder reservá-lo — a Central pode liberar antes.</p></div>
+    </div>
+    <div class="split">
+      <div>
+        <div class="rules">
+          <div>
+            <h3>O que isso evita</h3>
+            <ul class="checks checks--tight">
+              <li>Lotes e unidades “presos” sem venda</li>
+              <li>Reserva feita só para segurar imóvel na carteira</li>
+              <li>Disputa entre corretores e retrabalho da Central</li>
+            </ul>
+          </div>
+          <div>
+            <h3>O que isso garante</h3>
+            <ul class="checks checks--tight">
+              <li>Regra igual para todos os corretores</li>
+              <li>Estoque sempre refletindo a realidade</li>
+              <li>Tudo registrado na auditoria, sem intervenção manual</li>
+            </ul>
+          </div>
+        </div>
+        <p class="callout"><b>Controle na mão da Central.</b> O quadro “Corretores bloqueados” mostra quem está impedido, em qual imóvel e até quando — com botão para liberar quando fizer sentido. Indicações de venda seguem permitidas durante o bloqueio.</p>
+        <p class="callout"><b>Os tempos são configuráveis.</b> Os valores exibidos (20 min · 2 h · 24 h) são o padrão sugerido: são parâmetros ajustáveis por empreendimento, conforme a política da empresa.</p>
+      </div>
+      <div class="split-media reveal">
+        <div class="shots">
+          <figure class="shot shot--phone" style="max-width:290px"><div class="phone device"><img src="assets/app-reserva.webp" width="640" height="830" loading="lazy" decoding="async" alt="Reserva ativa: faixa verde com o tempo restante para juntar documentos e concluir"></div><figcaption>Reserva ativa, com contador</figcaption></figure>
+          <figure class="shot shot--phone" style="max-width:290px"><div class="phone device"><img src="assets/app-bloqueio.webp" width="640" height="855" loading="lazy" decoding="async" alt="Prazo vencido: faixa vermelha informando o bloqueio de reserva neste imóvel até uma data e hora"></div><figcaption>Prazo vencido: bloqueio de 24 h</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGAMENTO E SIMULADOR -->
+<section class="section" id="pagamento">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Pagamento e simulação</span>
+      <h2>Formas de pagamento, dados de cobrança e simulador — do jeito da sua empresa</h2>
+    </div>
+    <div class="split split--top">
+      <div>
+        <h3 style="color:var(--navy);font-size:1.25rem">Planos de pagamento ilimitados</h3>
+        <ul class="checks checks--tight">
+          <li>Monte quantos planos quiser, com etapas: ato, sinal, parcelas, financiamento, chaves</li>
+          <li>Valor e número de parcelas por etapa, indexador (INCC, IPCA, IGP-M…) e banco/portador</li>
+          <li>Ative ou pause um plano sem apagar</li>
+          <li>Os planos aparecem na ficha do imóvel e no pedido de reserva do corretor</li>
+          <li>Dados bancários: PIX, boleto e depósito/TED com titular, documento e instruções</li>
+        </ul>
+        <h3 style="color:var(--navy);font-size:1.25rem;margin-top:34px">Simulador de financiamento</h3>
+        <ul class="checks checks--tight">
+          <li>Em qualquer lote ou apartamento: o valor do imóvel já vem preenchido</li>
+          <li>O cliente escolhe a condição, a entrada e o número de parcelas — o resultado aparece na hora</li>
+          <li>Parcela inicial e final, total pago, juros, CET aproximado e renda mínima sugerida</li>
+          <li>SAC e Price, taxa nominal ou efetiva, seguros e tarifa mensal, com quadro de parcelas mês a mês</li>
+          <li>“Usar na reserva” anexa a simulação ao pedido — a Central já recebe condição, entrada e prazo</li>
+          <li>Condições da sua empresa: cadastro manual ou planilha padrão que o sistema lê e implementa sozinho</li>
+        </ul>
+        <p class="callout"><b>Simulação ilustrativa.</b> Serve para apresentar ao cliente com dados reais da sua empresa. Não é proposta nem aprovação de crédito, e o aviso legal acompanha cada simulação. A integração automática com banco ou parceiro depende de acordo e acesso do parceiro.</p>
+      </div>
+      <div class="split-media reveal">
+        <div class="shots" style="gap:18px">
+          <figure class="shot" style="flex:1 1 240px"><div class="device"><img src="assets/central-pagamento.webp" width="1000" height="958" loading="lazy" decoding="async" alt="Central de Vendas: tela de formas de pagamento com três planos, cada um mostrando suas etapas e valores"></div><figcaption>Formas de pagamento na Central</figcaption></figure>
+          <figure class="shot shot--phone" style="flex:0 1 210px"><div class="phone device"><img src="assets/app-simulador.webp" width="640" height="1152" loading="lazy" decoding="async" alt="App do corretor: simulador com entrada, número de parcelas, primeira parcela, total pago, juros e CET aproximado"></div><figcaption>Simulador no app do corretor</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATÓRIOS -->
+<section class="section section--soft" id="relatorios">
+  <div class="wrap split split--rev split--top">
+    <div>
+      <span class="eyebrow">Solicitações, comissões e relatórios</span>
+      <h2>Do pedido ao contrato, e da comissão ao relatório — sem planilha</h2>
+      <h3 style="color:var(--navy);font-size:1.15rem;margin-top:28px">Do pedido ao contrato</h3>
+      <ul class="checks checks--tight">
+        <li>Pedidos de reserva e de indicação de venda chegam em tempo real, com dados do cliente</li>
+        <li>A Central decide em um clique: Reservado, Vendido ou Disponível, com observação</li>
+        <li>Fechamento e contrato: gera o contrato em PDF com o modelo da própria empresa, com os campos preenchidos automaticamente</li>
+        <li>Aviso de privacidade (LGPD) na própria tela, com recursos projetados para apoiar o tratamento de dados conforme as políticas da empresa</li>
+      </ul>
+      <h3 style="color:var(--navy);font-size:1.15rem;margin-top:28px">Comissões e relatórios</h3>
+      <ul class="checks checks--tight">
+        <li>Comissão calculada por venda e acompanhada em etapas: pendente, aprovada e paga</li>
+        <li>Cada corretor enxerga apenas a própria comissão no app dele</li>
+        <li>Relatório executivo, de vendas e de ranking em PDF, e planilha para Excel (CSV)</li>
+        <li>Período à escolha: todo o período, este mês, últimos 30 ou 90 dias</li>
+        <li>Saem com a marca da sua empresa — nome, logo e cores configurados pela SKL na implantação</li>
+      </ul>
+    </div>
+    <div class="split-media reveal">
+      <div class="shots" style="gap:18px">
+        <figure class="shot" style="flex:1 1 260px"><div class="device"><img src="assets/relatorio-painel.webp" width="800" height="762" loading="lazy" decoding="async" alt="Central de Vendas: aba Relatórios com as opções de relatório executivo, de vendas e de ranking, em PDF ou planilha"></div><figcaption>Relatórios na Central: PDF ou planilha</figcaption></figure>
+        <figure class="shot" style="flex:1 1 200px;max-width:260px"><div class="device"><img src="assets/relatorio-capa.webp" width="640" height="740" loading="lazy" decoding="async" alt="Capa do relatório executivo de vendas e comissões, com a marca SKL"></div><figcaption>Relatório executivo (exemplo)</figcaption></figure>
+      </div>
+      <p style="text-align:center;font-size:.85rem;color:var(--muted);margin-top:14px">Exemplos com dados fictícios de demonstração.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ALUGUÉIS -->
+<section class="section" id="alugueis">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Central de Aluguéis</span>
+      <h2>A carteira de imóveis para locação, organizada</h2>
+      <ul class="checks">
+        <li>Imóveis com várias fotos, descrição, endereço, valor do aluguel e situação (disponível, alugado, reservado)</li>
+        <li>Localização no mapa, com atalhos para Google Maps e Apple Maps</li>
+        <li>O corretor consulta tudo e registra o interesse do cliente — quem altera a situação é sempre a Central</li>
+        <li>Interesses acompanhados por etapa: pendente, em contato, concluído ou descartado</li>
+        <li>Corretores e comissões por corretor, com o mesmo login da venda</li>
+      </ul>
+      <p class="callout"><b>Um só acesso para vender e alugar.</b> O mesmo login do corretor abre Vendas e Aluguéis: ao entrar, ele escolhe a linha — e troca quando quiser.</p>
+    </div>
+    <div class="split-media reveal">
+      <figure class="shot shot--tablet"><div class="device"><img src="assets/central-alugueis.webp" width="1000" height="958" loading="lazy" decoding="async" alt="Central de Aluguéis: carteira de imóveis com foto, endereço, situação e valor do aluguel"></div><figcaption>Carteira de imóveis (dados de demonstração)</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- SEGURANÇA -->
+<section class="section section--soft" id="seguranca">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Segurança e auditoria</span>
+      <h2>Cada pessoa vê e faz apenas o que deve</h2>
+    </div>
+    <div class="grid roles">
+      <article class="card reveal"><h3>Administrador</h3><p>Controle total: usuários, plano, formas de pagamento, comissões, integração e configurações.</p></article>
+      <article class="card reveal"><h3>Controle de vendas</h3><p>Operação diária: decide pedidos, altera a situação dos imóveis, gera contratos e relatórios.</p></article>
+      <article class="card reveal"><h3>Corretor</h3><p>Consulta, pede reservas e acompanha as próprias vendas e comissões. Nunca altera o estoque.</p></article>
+    </div>
+    <ul class="checks grid grid--2" style="margin-top:34px;gap:14px 40px">
+      <li>Permissões aplicadas no próprio banco de dados, não só na tela</li>
+      <li>Novos usuários por convite (a pessoa cria a própria senha) ou acesso direto com validade de 2 horas a 30 dias</li>
+      <li>Ativar, desativar e redefinir senha a qualquer momento, sem perder o histórico</li>
+      <li>Limite de corretores por pacote, com pedido de ampliação pela própria Central</li>
+      <li>Auditoria completa: quem alterou, quando e o quê</li>
+      <li>Dados na nuvem, com login individual e recursos projetados para apoiar o tratamento de dados conforme as políticas da empresa e a LGPD</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INTEGRAÇÃO -->
+<section class="section" id="integracao">
+  <div class="wrap">
+    <div class="head head--center">
+      <span class="eyebrow">Integração com CRM</span>
+      <h2>Use a SKL sozinha ou conectada ao CRM que a sua empresa já utiliza</h2>
+      <p class="lead">A SKL está preparada para integração com o CV CRM via API. Onde existe integração, o CRM continua sendo a fonte oficial de gestão e a SKL entrega esses dados como uma ferramenta visual e operacional para a equipe. Quem não usa CRM opera normalmente com a base própria da plataforma.</p>
+    </div>
+    <div class="diagram reveal">
+      <div class="node"><b>CRM da empresa</b><span>Fonte oficial de gestão · empreendimentos · imóveis · preços · corretores · clientes</span></div>
+      <div class="link"><big aria-hidden="true">⇄</big>integração via API, conforme o escopo</div>
+      <div class="node node--skl"><b>Plataforma SKL</b><span>Mapa · Central · App do corretor · Reservas</span></div>
+    </div>
+    <div class="grid grid--2">
+      <div class="card">
+        <h3>O que a integração pode fazer</h3>
+        <ul class="checks checks--tight">
+          <li>Consumir disponibilidade e preço oficiais dos imóveis, atualizados automaticamente</li>
+          <li>Manter a situação do estoque coerente com a do CRM, sem digitação dupla</li>
+          <li>Vincular cada corretor ao seu cadastro no CRM</li>
+          <li>Enviar reservas e dados de clientes ao CRM, quando o escopo e as permissões permitirem</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Depende de acessos e validações da empresa</h3>
+        <ul class="checks checks--tight">
+          <li>Acesso à API, credenciais e permissões no CRM</li>
+          <li>Identificação de empreendimentos, corretores e formas de pagamento</li>
+          <li>Escopo de leitura e/ou envio definido na implantação</li>
+          <li>Testes acompanhados com a equipe da empresa antes de entrar em produção</li>
+        </ul>
+      </div>
+    </div>
+    <ol class="steps" style="margin-top:30px">
+      <li><b>Levantamento</b><span>Definimos com a empresa quais dados do CRM entram na integração.</span></li>
+      <li><b>Acessos</b><span>A empresa libera as credenciais e informa os códigos dos empreendimentos e corretores.</span></li>
+      <li><b>Conexão e testes</b><span>Ligamos as bases e validamos, junto com a equipe da empresa, cada informação.</span></li>
+      <li><b>Produção</b><span>Após a confirmação da empresa, a integração entra em uso e é acompanhada.</span></li>
+    </ol>
+    <p class="callout"><b>E se a sua empresa usa outro sistema?</b> A integração já construída é com o CV CRM. Para outros sistemas o caminho é o mesmo — uma conexão via API, com o acesso liberado pela própria empresa — e é avaliado caso a caso, conforme o fornecedor ofereça API e o escopo combinado. Quando o sistema não tem API, avaliamos alternativas, como importação de dados por planilha. A SKL também funciona sozinha, com a base própria da plataforma.</p>
+    <p class="fine" style="color:var(--muted)">A integração com CRM é um trabalho de implantação, orçado separadamente conforme o escopo. Este site não representa parceria, homologação ou certificação oficial com qualquer fornecedor de CRM. Marcas citadas pertencem aos seus titulares.</p>
+  </div>
+</section>
+
+<!-- IMPLANTAÇÃO -->
+<section class="section section--soft" id="implantacao">
+  <div class="wrap">
+    <div class="head head--center">
+      <span class="eyebrow">Implantação</span>
+      <h2>Do primeiro contato ao sistema no ar</h2>
+    </div>
+    <ol class="steps steps--5">
+      <li><b>Conversa e diagnóstico</b><span>Entendemos o empreendimento, o time comercial e as regras de reserva e pagamento.</span></li>
+      <li><b>Configuração e personalização</b><span>Ambiente do cliente, usuários, prazos e formas de pagamento; identidade da empresa na implantação personalizada.</span></li>
+      <li><b>Carga dos dados</b><span>Mapas, lotes/unidades, plantas, memoriais e usuários (e conexão com o CRM, se contratada).</span></li>
+      <li><b>Treinamento e testes</b><span>Capacitação da Central e dos corretores, com guia de uso completo em PDF.</span></li>
+      <li><b>Entrada em operação</b><span>Link do corretor no ar, Central instalada e acompanhamento nos primeiros dias.</span></li>
+    </ol>
+    <div class="grid grid--2" style="margin-top:26px">
+      <div class="card">
+        <h3>Implantação base</h3>
+        <p style="margin-bottom:12px">Interface padrão SKL.</p>
+        <ul class="checks checks--tight">
+          <li>Criação do ambiente do cliente e configuração inicial</li>
+          <li>Carga básica dos dados e cadastro de usuários</li>
+          <li>Treinamento básico e entrada em operação</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Implantação personalizada</h3>
+        <p style="margin-bottom:12px">Logomarca, cores e nome da plataforma.</p>
+        <ul class="checks checks--tight">
+          <li>Mapas, lotes/unidades, plantas e memoriais</li>
+          <li>Formas de pagamento, condições do simulador e regras de reserva</li>
+          <li>Modelo de contrato da empresa</li>
+          <li>Preparação para entrada em produção</li>
+        </ul>
+      </div>
+    </div>
+    <p class="callout"><b>Material de apoio incluso.</b> Guia de uso completo em PDF para a Central e para os corretores, e acompanhamento na entrada em operação. Integrações, importações complexas e módulos exclusivos são orçados à parte.</p>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="section" id="planos">
+  <div class="wrap">
+    <div class="head head--center">
+      <span class="eyebrow">Planos e contratação</span>
+      <h2>Implantação única e mensalidade por porte da equipe</h2>
+      <p class="lead">Cada operação é diferente. Você recebe uma proposta formal, sob medida, depois de uma demonstração com o seu empreendimento.</p>
+    </div>
+    <div class="grid grid--2">
+      <article class="card plan reveal">
+        <span class="badge">Essencial</span>
+        <h3>Central e estoque com mapa</h3>
+        <ul class="checks checks--tight" style="margin-top:14px">
+          <li>Mapa interativo com a localização dos imóveis</li>
+          <li>Quadra, lote/unidade, área, valor e situação</li>
+          <li>Central de Vendas em tempo real (Windows e Android)</li>
+          <li>Cadastro de usuários da equipe</li>
+        </ul>
+        <div class="price"><b>Sob proposta</b><span>Mensalidade conforme o número de usuários ativos</span></div>
+      </article>
+      <article class="card plan plan--hl reveal">
+        <span class="badge">Completo</span>
+        <h3>Tudo do Essencial, mais a operação de campo e comercial</h3>
+        <ul class="checks checks--tight" style="margin-top:14px">
+          <li>App do Corretor (link iPhone/Android), memorial, medidas e rota</li>
+          <li>Controle automático de reservas, formas de pagamento e simulador</li>
+          <li>Contratos em PDF, comissões, relatórios e auditoria</li>
+        </ul>
+        <div class="price"><b>Sob proposta</b><span>Mensalidade conforme o número de usuários ativos</span></div>
+      </article>
+    </div>
+    <p class="note">A mensalidade cobre hospedagem em nuvem, manutenção, suporte e atualizações do produto padrão. Vários empreendimentos, integrações (CRM, ERP, WhatsApp, portais, bancos), importações complexas, módulos exclusivos e customizações são orçados separadamente.</p>
+    <p style="text-align:center;margin-top:30px"><a class="btn btn--primary" href="https://wa.me/5566996121567?text=Ol%C3%A1%21%20Quero%20receber%20uma%20proposta%20da%20plataforma%20SKL." target="_blank" rel="noopener">Solicitar proposta</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--soft" id="faq">
+  <div class="wrap">
+    <div class="head head--center">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>O que as empresas perguntam antes de contratar</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Preciso instalar algo ou ter um servidor?</summary>
+        <p>Não há servidor local: a plataforma roda na nuvem e a equipe só faz login. A Central de Vendas tem aplicativo para computador (Windows) e para tablet e celular Android. O corretor usa por link, no iPhone, no Android e no computador; no iPhone pode ser instalado na tela inicial como aplicativo web (não é aplicativo de loja).</p></details>
+      <details><summary>Preciso abandonar o CRM que já uso?</summary>
+        <p>Não. Onde existe integração, o CRM continua sendo a fonte oficial de gestão, e a SKL entrega esses dados como uma ferramenta visual e operacional. Quem não usa CRM opera normalmente com a base própria da plataforma.</p></details>
+      <details><summary>Funciona para loteamento, prédio e aluguel?</summary>
+        <p>Sim, para os três. Loteamentos com quadras, lotes, medidas e memorial; prédios com torres, andares, plantas e acabamentos; e a Central de Aluguéis para imóveis de locação. Vários empreendimentos podem ficar no mesmo login, cada um isolado do outro.</p></details>
+      <details><summary>Como funciona o controle de reservas?</summary>
+        <p>O corretor faz um pedido por imóvel; a Central tem 20 minutos para responder; aprovada, a reserva dura 2 horas para concluir a venda; se não concluir, o imóvel volta a Disponível e aquele corretor fica 24 horas sem reservá-lo. Esses tempos são o padrão sugerido e podem ser ajustados por empreendimento.</p></details>
+      <details><summary>Como ficam a segurança e a LGPD?</summary>
+        <p>Cada pessoa tem login individual e permissões aplicadas no próprio banco de dados, e toda alteração fica na auditoria (quem, quando e o quê). Os recursos são projetados para apoiar o tratamento de dados conforme as políticas da empresa e a LGPD.</p></details>
+      <details><summary>Como é a contratação e a implantação?</summary>
+        <p>Começa com uma conversa e uma demonstração ao vivo. Depois vem a proposta, a configuração do ambiente, a carga dos dados, o treinamento da Central e dos corretores e o acompanhamento nos primeiros dias em operação.</p></details>
+      <details><summary>Posso ver funcionando antes de decidir?</summary>
+        <p>Sim. Agendamos uma demonstração ao vivo, com o aplicativo em funcionamento, e você recebe uma proposta sob medida para a sua operação.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="section section--dark contact" id="contato">
+  <div class="wrap">
+    <span class="eyebrow">Fale com a SKL</span>
+    <h2>Vamos demonstrar a plataforma com o seu empreendimento?</h2>
+    <p class="lead">Agende uma demonstração ao vivo, com o aplicativo em funcionamento, e receba uma proposta sob medida para a sua operação.</p>
+    <div class="cta-row">
+      <a class="btn btn--primary" href="https://wa.me/5566996121567?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20da%20plataforma%20SKL." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn btn--ghost" href="mailto:contato@sklgeosolucoes.com.br?subject=Demonstra%C3%A7%C3%A3o%20da%20plataforma%20SKL">Enviar e-mail</a>
+    </div>
+    <div class="contact-cards">
+      <div><small>Responsável</small><span>Yuri Leal</span></div>
+      <div><small>E-mail</small><a href="mailto:contato@sklgeosolucoes.com.br">contato@sklgeosolucoes.com.br</a></div>
+      <div><small>Telefone / WhatsApp</small><a href="tel:+5566996121567">(66) 9.9612-1567</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <p><b style="color:#fff">SKL Soluções Digitais</b> — Mapeamento · Gestão · Conexão comercial</p>
+      <p><a href="mailto:contato@sklgeosolucoes.com.br">contato@sklgeosolucoes.com.br</a> · <a href="privacidade.html">Privacidade</a> · <a href="#topo">Voltar ao topo ↑</a></p>
+    </div>
+    <p class="fine" style="margin-top:14px"><a href="sistema-para-loteamentos.html">Sistema para loteamentos</a> · <a href="sistema-para-predios-e-construtoras.html">Prédios e construtoras</a> · <a href="sistema-de-alugueis-para-imobiliarias.html">Aluguéis para imobiliárias</a> · <a href="controle-de-reservas-de-lotes-e-unidades.html">Controle de reservas</a> · <a href="integracao-cv-crm.html">Integração com CV CRM</a></p>
+    <p class="fine">© 2026 SKL Soluções Digitais. As telas e os relatórios mostrados neste site usam dados fictícios de demonstração. Marcas de terceiros citadas pertencem aos seus titulares e não indicam parceria, homologação ou certificação.</p>
+  </div>
+</footer>
+
+<a class="wa-float btn btn--primary btn--sm" href="https://wa.me/5566996121567?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20a%20plataforma%20SKL." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
+
+<script src="site.js" defer></script>
+</body>
+</html>
